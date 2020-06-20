@@ -2,6 +2,9 @@ dmenu - dynamic menu
 ====================
 dmenu is an efficient dynamic menu for X.
 
+This is my custom build
+
+![dmenu_custombuild](screenshot.png)
 
 Requirements
 ------------
@@ -23,4 +26,15 @@ Running dmenu
 -------------
 See the man page for details.
 
-![dmenu_custombuild](screenshot.png)
+Uninstall dmenu
+---------------
+If you want to uninstall, run following into the root folder of dmenu build
+
+	sudo make uninstall
+
+Features
+--------
+* Add custom font(using Monaco in build)
+* Change different types of colors of different parts of dmenu
+* Show numbers
+* Change lineheight
