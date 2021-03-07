@@ -6,16 +6,22 @@ static int centered = 0;                    /* -c option; centers dmenu on scree
 static int min_width = 750;                    /* minimum width when centered */
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
-	"Fira Code Retina:size=12"
+	"Fantasque Sans Mono:style=Regular:size=14"
 };
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
-	[SchemeNorm] = { "#abb2bf", "#1e2127" },
-	[SchemeSel] = { "#1e2127", "#61afef" },
-	[SchemeSelHighlight] = { "#5c6370", "#61afef" },
-	[SchemeNormHighlight] = { "#d19a66", "#5c6370" },
-	[SchemeOut] = { "#5c6370", "#56b6c2" },
+	[SchemeNorm] = { "#abb2bf", "#1e1e1e" },
+	[SchemeSel] = { "#1e1e1e", "#569cd6" },
+	[SchemeSelHighlight] = { "#f44747", "#569cd6" },
+	[SchemeNormHighlight] = { "#f44747", "#c586c0" },
+	[SchemeOut] = { "#c586c0", "#4ec9b0" },
+
+	//[SchemeNorm] = { "foreground", "background" },
+	//[SchemeSel] = { "background", "color4" },
+	//[SchemeSelHighlight] = { "color9", "color4" },
+	//[SchemeNormHighlight] = { "color9", "color5" },
+	//[SchemeOut] = { "color5", "color6" },
 };
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
 static unsigned int lines      = 0;
