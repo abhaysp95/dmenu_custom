@@ -3,26 +3,20 @@
 
 static int topbar = 1;                      /* -b  option; if 0, dmenu appears at bottom     */
 static int centered = 0;                    /* -c option; centers dmenu on screen */
-static int min_width = 750;                    /* minimum width when centered */
+static int min_width = 500;                    /* minimum width when centered */
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
-	"Fantasque Sans Mono:style=Regular:size=14"
+	"UbuntuMono Nerd Font Mono:size=12"
 };
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
-static const char *colors[SchemeLast][2] = {
-	/*     fg         bg       */
-	[SchemeNorm] = { "#abb2bf", "#1e1e1e" },
-	[SchemeSel] = { "#1e1e1e", "#569cd6" },
-	[SchemeSelHighlight] = { "#f44747", "#569cd6" },
-	[SchemeNormHighlight] = { "#f44747", "#c586c0" },
-	[SchemeOut] = { "#c586c0", "#4ec9b0" },
 
-	//[SchemeNorm] = { "foreground", "background" },
-	//[SchemeSel] = { "background", "color4" },
-	//[SchemeSelHighlight] = { "color9", "color4" },
-	//[SchemeNormHighlight] = { "color9", "color5" },
-	//[SchemeOut] = { "color5", "color6" },
-};
+#include "/home/raytracer/.cache/wal/colors-wal-dmenu.h"
+//static const char *colors[SchemeLast][2] = {
+	/*     fg         bg       */
+	//[SchemeNorm] = { "#bbbbbb", "#222222" },
+	//[SchemeSel] = { "#eeeeee", "#005577" },
+	//[SchemeOut] = { "#000000", "#00ffff" },
+//};
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
 static unsigned int lines      = 0;
 static unsigned int lineheight = 0;         /* -h option; minimum height of a menu line     */
@@ -34,4 +28,4 @@ static unsigned int lineheight = 0;         /* -h option; minimum height of a me
 static const char worddelimiters[] = " ";
 
 /* Size of the window border */
-static const unsigned int border_width = 2;
+static const unsigned int border_width = 3;
